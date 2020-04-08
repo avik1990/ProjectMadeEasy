@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ProjectMadeEasy</string>
+    <string name="v_username">PLease Enter Username</string>
+    <string name="v_password">PLease Enter Password</string>
+    <string name="v_credentials">Please enter valid Credentials</string>
+</resources>

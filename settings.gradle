@@ -1,0 +1,2 @@
+rootProject.name='ProjectMadeEasy'
+include ':app'

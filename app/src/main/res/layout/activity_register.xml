@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".SigninActivity">
+
+    <LinearLayout
+        android:id="@+id/llLogoview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Project Made Easy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llLogoview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <EditText
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Username" />
+
+            <EditText
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile No."
+                android:layout_marginTop="@dimen/_5sdp" />
+
+            <EditText
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+
+            <EditText
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+            <EditText
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Re-Password"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="Register" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
