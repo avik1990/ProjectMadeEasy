@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.projectmadeeasy.app.utils.Session;
 
+import java.util.ArrayList;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,7 +32,6 @@ public class MyProfile extends AppCompatActivity implements View.OnClickListener
     }
 
     private void redirection() {
-
         if (Session.getisProfile(context)) {
             if (Session.getisLogged(context)) {
                 gotoDashboard();
@@ -38,29 +39,27 @@ public class MyProfile extends AppCompatActivity implements View.OnClickListener
         }
     }
 
-        private void initViews () {
-            btnSave = findViewById(R.id.btnSave);
+    private void initViews() {
+        btnSave = findViewById(R.id.btnSave);
 
-            btnSave.setOnClickListener(this);
+        btnSave.setOnClickListener(this);
         /*//labda expression
         btnSave.setOnClickListener(e -> {
 
         });*/
-        }
+    }
 
-        @Override
-        public void onClick(View v){
-            if (v == btnSave) {
-                Session.setisProfile(context, true);
-                Intent i = new Intent(context, Dashboard.class);
-                startActivity(i);
-                finish();
-            }
+    @Override
+    public void onClick(View v) {
+        if (v == btnSave) {
+            Session.setisProfile(context, true);
+            Intent i = new Intent(context, Dashboard.class);
+            startActivity(i);
+            finish();
         }
-
+    }
 
     private void gotoDashboard() {
-
         Intent i = new Intent(context, Dashboard.class);
         //i.putExtra("username", userName); // send value to another activity
         startActivity(i);
