@@ -11,5 +11,127 @@
         android:id="@+id/rl_toolbar"
         layout="@layout/toolbar" />
 
+    <TextView
+        android:id="@+id/ProjectSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_toolbar"
+        android:text="Project Summary"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/ProjectDetails"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/ProjectSummary"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/Introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ProjectDetails"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Introduction"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:id="@+id/Intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Introduction"
+        android:background="@color/black">
+
+        <EditText
+            android:id="@+id/etIntroduction"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/Button1" />
+
+        <Button
+            android:id="@+id/Button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="upload" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/MainContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Intro"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Main Content"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainContent"
+        android:background="@color/black">
+
+        <EditText
+            android:id="@+id/etMainContent"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/Button2" />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="upload" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Conclusion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Conclusion"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Conclusion"
+        android:background="@color/black">
+
+        <EditText
+            android:id="@+id/etConclusion"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/Button3" />
+
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="upload" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Save" />
 
 </RelativeLayout>
