@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <LinearLayout
-        android:id="@+id/llContainer"
-        android:layout_width="@dimen/_200sdp"
-        android:background="@color/colorAccent"
-        android:orientation="vertical"
-        android:layout_height="@dimen/_250sdp"/>
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textSize="@dimen/_13sdp"
+        android:text="Select Ink Color"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
-</LinearLayout>
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/v_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeader"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:alignContent="stretch"
+        app:alignItems="stretch"
+        app:flexWrap="wrap"></com.google.android.flexbox.FlexboxLayout>
+
+    <Button
+        android:id="@+id/btnSelectionDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_container"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Done" />
+
+</RelativeLayout>
+
